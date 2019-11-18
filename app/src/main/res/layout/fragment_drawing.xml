@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DrawingFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".DrawingFragment"
+        android:weightSum="3"
+        android:id="@+id/outer_layout"
+        android:background="#cccccc">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity"
+            android:background="#cccccc"
+            >
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:id="@+id/red"
+                android:onClick="switchStrokeColor"
+                android:background="#F00606" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:id="@+id/green"
+                android:onClick="switchStrokeColor"
+                android:background="#85F303" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:onClick="switchStrokeColor"
+                android:id="@+id/blue"
+                android:background="#0689F0" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:id="@+id/purple"
+                android:onClick="switchStrokeColor"
+                android:background="#4E10BB" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            tools:context=".MainActivity"
+            android:background="#cccccc">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:onClick="switchStrokeWidth"
+                android:text="S"
+                android:id="@+id/stroke_width_small"
+                android:background="#797878" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:onClick="switchStrokeWidth"
+                android:text="M"
+                android:id="@+id/stroke_width_medium"
+                android:background="#ADADAC" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:textColor="#000000"
+                android:onClick="switchStrokeWidth"
+                android:text="L"
+                android:id="@+id/stroke_width_large"
+                android:background="#ADADAC" />
+
+            <Button
+                android:id="@+id/clear"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:background="#232527"
+                android:orientation="vertical"
+                android:text="clear"
+                android:onClick="clearDrawing"
+                android:textColor="#F5EFEF"
+                android:textSize="20dp" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:textSize="20dp"
+                android:textColor="#F5EFEF"
+                android:text="share"
+                android:id="@+id/share"
+                android:onClick="shareTask"
+                android:background="#4A4F50" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".MainActivity"
+            android:id="@+id/drawing"
+            android:layout_weight="1"
+            android:background="#cccccc">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
